@@ -46,6 +46,7 @@ version: "x.x.x"
 | `ljg-word` | English word deep-dive | None |
 | `ljg-writes` | Writing engine for thinking through ideas | None |
 | `tomyli-hubble` | Three-layer search: memory → subscriptions → public web | Readwise CLI + nmem CLI |
+| `understand-change` | Interactive tutor for deeply understanding a code change (checklist + drill + quiz) | None |
 
 ## Commands
 
