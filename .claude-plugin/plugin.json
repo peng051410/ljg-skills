@@ -1,12 +1,12 @@
 {
   "name": "ljg-skills",
-  "version": "1.17.27",
-  "description": "LJG's personal Claude Code skills collection - paper reading, content casting, writing tools",
+  "version": "1.18.0",
+  "description": "Personal Claude Code skills collection (forked from lijigang/ljg-skills, with tomyli-* skills added) - paper reading, content casting, writing tools",
   "author": {
-    "name": "lijigang",
-    "url": "https://github.com/lijigang"
+    "name": "peng051410",
+    "url": "https://github.com/peng051410"
   },
-  "repository": "https://github.com/lijigang/ljg-skills",
+  "repository": "https://github.com/peng051410/ljg-skills",
   "keywords": ["skills", "paper-reading", "content-casting", "writing"],
   "skills": "./skills"
 }

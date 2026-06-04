@@ -1,13 +1,13 @@
 {
   "name": "ljg-skills",
-  "displayName": "LJG Skills Collection",
-  "description": "Personal Claude Code skills collection for paper reading, content casting, and writing workflows",
-  "version": "1.17.27",
+  "displayName": "LJG Skills Collection (tomyli fork)",
+  "description": "Personal Claude Code skills collection for paper reading, content casting, and writing workflows. Forked from lijigang/ljg-skills, maintained personally with tomyli-* skills added.",
+  "version": "1.18.0",
   "owner": {
-    "name": "lijigang",
-    "url": "https://github.com/lijigang"
+    "name": "peng051410",
+    "url": "https://github.com/peng051410"
   },
-  "repository": "https://github.com/lijigang/ljg-skills",
+  "repository": "https://github.com/peng051410/ljg-skills",
   "license": "MIT",
   "keywords": [
     "skills",
@@ -26,8 +26,8 @@
   "plugins": [
     {
       "name": "ljg-skills",
-      "description": "LJG's personal Claude Code skills collection",
-      "version": "1.17.27",
+      "description": "Personalized fork of LJG skills (tomyli-daily / tomyli-study / tomyli-mem added)",
+      "version": "1.18.0",
       "source": "./"
     }
   ]
