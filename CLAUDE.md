@@ -45,6 +45,7 @@ version: "x.x.x"
 | `ljg-skill-map` | Visual overview of installed skills | Bash |
 | `ljg-word` | English word deep-dive | None |
 | `ljg-writes` | Writing engine for thinking through ideas | None |
+| `tomyli-hubble` | Three-layer search: memory → subscriptions → public web | Readwise CLI + nmem CLI |
 
 ## Commands
 
