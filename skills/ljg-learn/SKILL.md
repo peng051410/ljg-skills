@@ -60,6 +60,9 @@ Assistant: [对"熵"进行八维解剖，生成 org-mode 报告]
 #+filetags: :concept:
 #+date: [YYYY-MM-DD]
 
+* 关联
+- Logseq hub: [[file:~/Nustore/logseq/notes/pages/{概念名}.md][{概念名}]]
+
 * 定锚
 * 八刀
 ** 历史
@@ -76,5 +79,32 @@ Assistant: [对"熵"进行八维解剖，生成 org-mode 报告]
 
 写入文件：
 1. 运行 `date +%Y%m%dT%H%M%S` 获取时间戳。
-2. 写入 `~/Documents/notes/{timestamp}--概念解剖-{概念名}__concept.org`。
-3. 报告路径，完成。
+2. 写入完整解剖 → `~/Documents/notes/{timestamp}--概念解剖-{概念名}__concept.org`。
+3. 写入 logseq hub stub（双写策略）：
+   - 路径：`~/Nustore/logseq/notes/pages/{概念名}.md`
+   - 仅当文件不存在时创建（已存在则 skip，不覆盖用户后续修改）
+   - 用 logseq markdown 语法（vault 的 `:preferred-format :markdown`）
+   - 用 properties 形式标记 metadata（不是 YAML frontmatter）
+   - hub 模板：
+
+     ```markdown
+     tags:: [[concept]], [[hub]]
+     type:: concept
+     captured-on:: [[YYYY-MM-DD Day]]
+
+     - # {概念名} ({pīnyīn})
+     - ## 一句话
+       - {一句话压缩}
+     - ## 公式
+       - `{公式}`
+     - ## 完整解剖
+       - [{timestamp}--概念解剖-{概念名}__concept.org](file:///Users/tomyli/Documents/notes/{timestamp}--概念解剖-{概念名}__concept.org)
+     - ## 关联概念
+       - （留空，由用户后续手动填入或反向链接自动浮现）
+     - ## 出处与回响
+       - （留空，由用户后续手动添加）
+     ```
+
+   - hub 的作用是 logseq graph 节点 + 反向链接磁石，*不重复* org 里的完整内容
+   - 如果文件已存在，告诉用户："logseq hub 已存在，未覆盖：{path}"
+4. 报告两个路径（完整 org + logseq hub），完成。
